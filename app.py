@@ -12,4 +12,4 @@ def chat():
     return f"你说：{user_input}"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=80)
