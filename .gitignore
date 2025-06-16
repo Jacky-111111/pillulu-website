@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# 环境变量 & 安全文件
+.env
+*.pem
+
+# Docker
+*.log
+*.pid
+*.sock
+
+# SSL / Certbot
+/etc/letsencrypt/
+etc/ssl/
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store
