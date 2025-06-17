@@ -5,6 +5,11 @@ services:
     build: .
     container_name: pillulu-web
     restart: always
+    env_file:
+      - .env
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=production
   nginx:
     image: nginx:latest
     container_name: pillulu-nginx

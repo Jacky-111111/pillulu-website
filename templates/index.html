@@ -2,8 +2,75 @@
 <html>
 <head>
     <title>Pillulu | Smart medicine box and medication consultant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>This is Pillulu, your personal medicine box and medication consultant.</h1>
+    <div class="container">
+        <header>
+            <h1>Pillulu</h1>
+            <p class="subtitle">Your personal medicine box and medication consultant</p>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <input type="text" id="medicineInput" placeholder="请输入药物名称..." class="search-input">
+                <button onclick="getMedicineInfo()" class="search-button">查询</button>
+            </div>
+
+            <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>正在查询中...</p>
+            </div>
+
+            <div id="resultContainer" class="result-container"></div>
+        </main>
+    </div>
+
+    <script>
+        async function getMedicineInfo() {
+            const medicineInput = document.getElementById('medicineInput');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const resultContainer = document.getElementById('resultContainer');
+            const medicineName = medicineInput.value.trim();
+
+            if (!medicineName) {
+                alert('请输入药物名称');
+                return;
+            }
+
+            try {
+                loadingSpinner.style.display = 'flex';
+                resultContainer.innerHTML = '';
+
+                const response = await fetch('/get_medicine_info', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ medicine_name: medicineName }),
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    resultContainer.innerHTML = `<div class="result-content">${data.response.replace(/\n/g, '<br>')}</div>`;
+                } else {
+                    resultContainer.innerHTML = `<div class="error-message">查询出错: ${data.error}</div>`;
+                }
+            } catch (error) {
+                resultContainer.innerHTML = `<div class="error-message">系统错误: ${error.message}</div>`;
+            } finally {
+                loadingSpinner.style.display = 'none';
+            }
+        }
+
+        // 添加回车键触发查询
+        document.getElementById('medicineInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                getMedicineInfo();
+            }
+        });
+    </script>
 </body>
 </html>
