@@ -1,4 +1,4 @@
-# 🧠 Pillulu · Your smart medicine box and medication consultant
+# 💊 Pillulu · Your smart medicine box and medication consultant
 
 Pillulu is an AI-powered smart pill assistant that helps users identify medications, understand their usage, and manage daily intake with intelligent reminders. Designed with accessibility and safety in mind, Pillulu empowers individuals—especially the elderly and chronically ill—to take their medications correctly and confidently.
 
