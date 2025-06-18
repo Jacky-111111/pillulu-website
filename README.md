@@ -14,3 +14,12 @@ This file will not be uploaded to GitHub (thanks to `.gitignore`), so your crede
 
    ```env
    OPENAI_API_KEY=your_openai_api_key_here
+
+### 💁 Server
+
+Pillulu is hosted on AWS servers, using a stack of Docker, Nginx, Gunicorn, Flask, GitHub, and Let’s Encrypt (HTTPS).
+
+### 📝 Why "Pillulu":
+
+- The domain names "MedPal" and "Pillie" were already taken.
+- "Pillulu" reminds me of a smart, friendly childhood cartoon character "Pipilu" and I thought it would be a cute and approachable name for users of all ages.
