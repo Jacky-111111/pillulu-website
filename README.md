@@ -1,6 +1,8 @@
 # 💊 Pillulu · Your Smart Medicine Assistant & Health Companion
 
-Pillulu 是一款由 AI 驱动的智能药丸助手，帮助用户识别药物、了解用法，并通过智能提醒管
+Pillulu is an AI-powered smart pill assistant that helps users identify medications, understand their usage, and manage daily intake with intelligent reminders. Designed with accessibility and safety in mind, Pillulu empowers individuals—especially the elderly and chronically ill—to take their medications correctly and confidently.
+Pillulu currently uses the **ChatGPT 3.5-turbo** model for its AI features.  
+The OpenAI API key is generously sponsored by **Humble Academy**. 
 
 ### 🔐 Environment Variables
 
