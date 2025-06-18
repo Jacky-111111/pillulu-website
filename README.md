@@ -1,6 +1,6 @@
 # 💊 Pillulu · Your Smart Medicine Assistant & Health Companion
 
-Pillulu is an AI-powered smart pill assistant that helps users identify medications, understand their usage, and manage daily intake with intelligent reminders. Designed with accessibility and safety in mind, Pillulu empowers individuals—especially the elderly and chronically ill—to take their medications correctly and confidently.
+Pillulu 是一款由 AI 驱动的智能药丸助手，帮助用户识别药物、了解用法，并通过智能提醒管
 
 ### 🔐 Environment Variables
 
@@ -21,5 +21,5 @@ Pillulu is hosted on AWS servers, using a stack of Docker, Nginx, Gunicorn, Flas
 
 ### 📝 Why "Pillulu":
 
-- The domain names "MedPal" and "Pillie" were already taken.
-- "Pillulu" reminds me of a smart, friendly childhood cartoon character "Pipilu" and I thought it would be a cute and approachable name for users of all ages.
+- ～～The domain names "MedPal" and "Pillie" were already taken.～～
+- "Pillulu" reminds me of a smart, friendly childhood novel character "Pi Pi Lu" written by famous author Zheng Yuanjie, and I thought it would be a cute and approachable name for users of all ages.
