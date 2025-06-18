@@ -21,5 +21,5 @@ Pillulu is hosted on AWS servers, using a stack of Docker, Nginx, Gunicorn, Flas
 
 ### 📝 Why "Pillulu":
 
-- ～～The domain names "MedPal" and "Pillie" were already taken.～～
+- ~~The domain names "MedPal" and "Pillie" were already taken.~~
 - "Pillulu" reminds me of a smart, friendly childhood novel character "Pi Pi Lu" written by famous author Zheng Yuanjie, and I thought it would be a cute and approachable name for users of all ages.
